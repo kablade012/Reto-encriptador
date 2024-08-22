@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reto Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- emcabezado de la pagina-->
+    <header class="encabezado">
+        <img class="logo" src="img/Logo.png" alt="Logo de ALURA Latam">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock-search logo" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="#0B60B0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M11.5 21h-4.5a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2h10" />
+        <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+        <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        <path d="M20.2 20.2l1.8 1.8" />
+      </svg>
+    </header>
+
+   <!-- cuerpo de la pagina, area para encriptar y area para desencriptar-->
+    <main>
+        <section class="encriptador">
+        <textarea class="encriptar" placeholder="Ingrese su texto para ejecutar aqui"></textarea>
+        <div class="encriptador__aviso">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icono__aviso" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm.01 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" />
+              </svg>
+              <p class="texto__aviso">Solo letras minsculas y sin acentos</p>
+        </div>
+        <div class="encriptador__botones">
+        <button type="submit" class="btn_Ecriptar">Encriptar</button>
+         <button  type="submit" class="btn_Desencriptar">Desencriptar</button>
+        </div>
+        </section>
+         <section class="resultado">
+            <div class="resultado__contenedor">
+                <img class="img__muñeco" src="img/Muñeco.png" alt="Muñeco buscador">
+                <p class="contenedor___resultado__mens1">Nigun resultado fue encontrado.</p>
+                <p class="contenedor___resultado__mens2">Ingrese el texto que desee Encriptar o Desencriptar</p>
+            </div>
+            <textarea class="evaluador" readonly></textarea>
+            <button type="submit" class="btn__copiar">Copiar</button>
+
+         <section/>
+    </main>
+
+    <!-- pie de pagina-->
+    <footer class="piePagina">
+        <p class="desarrollado__por"> &copy; Todos los Derechos reservador- Luis david Bermudez 2024.</p>
+        <a class="link__github" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0B60B0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+          </svg></a>
+        <a class="link___linkedln" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0B60B0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+            <path d="M8 11l0 5" />
+            <path d="M8 8l0 .01" />
+            <path d="M12 16l0 -5" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg></a>
+          
+    </footer>
+    
+    <script src="js/encriptador.js" > </script>
+</body>
+</html>
